@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">testSpinner</string>
+
+    <string-array name="option_array">
+        <item>옵션 1</item>
+        <item>옵션 2</item>
+        <item>옵션 3</item>
+    </string-array>
+</resources>

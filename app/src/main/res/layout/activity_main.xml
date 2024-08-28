@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 상품 정보 -->
+    <TextView
+        android:id="@+id/productInfoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="상품 정보" />
+
+    <!-- 옵션 선택 Spinner -->
+    <Spinner
+        android:id="@+id/optionSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- 추가 옵션 선택 Spinner -->
+    <Spinner
+        android:id="@+id/extraOptionSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- 선택된 아이템 RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/selectedItemsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <!-- 수량 입력 및 가격 텍스트 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:divider="@drawable/divider"
+        android:background="@drawable/border_background"
+        android:dividerPadding="0dp"
+        android:showDividers="middle">
+
+        <!-- 감소 버튼 -->
+        <Button
+            android:id="@+id/button_decrease"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="-"
+            android:textColor="#000000"
+            android:background="@android:color/transparent"
+            android:textSize="18sp"
+             />
+
+        <!-- 수량 표시 텍스트 -->
+        <EditText
+            android:id="@+id/quantity_text"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#000000"
+            android:background="@android:color/transparent"
+            android:textSize="18sp"
+             />
+
+        <!-- 증가 버튼 -->
+        <Button
+            android:id="@+id/button_increase"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="+"
+            android:background="@android:color/transparent"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            />
+    </LinearLayout>
+
+
+    <!-- 구매하기 버튼 -->
+    <Button
+        android:id="@+id/buyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="구매하기"
+        android:background="@color/black"
+        android:textColor="@color/white" />
+</LinearLayout>
